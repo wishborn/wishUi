@@ -1,0 +1,12 @@
+---
+description: When handling a new version commit, or responding to "bump version"
+globs: 
+---
+
+# Update Version
+
+- First Increment the version in [composer.json](mdc:composer.json)
+- use minor(0.0.1) for versions with small changes, confirm with user.
+- use major(0.1.0) for versions with lots of changes, confirm with user.
+- Then tag it in git after making sure recent changes are in sync.
+- Never tag a repo without asking first.

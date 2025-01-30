@@ -1,0 +1,44 @@
+{
+    "name": "wishborn/wish-ui",
+    "description": "Ui components for Livewire",
+    "version": "v0.0.3.4",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0",
+        "livewire/livewire": "^3.5",
+        "livewire/volt": "^1.0",
+        "blade-ui-kit/blade-heroicons": "^2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "orchestra/testbench": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wishborn\\WishUi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wishborn\\WishUi\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wish Born",
+            "email": "wish@impact.do"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wishborn\\WishUi\\Providers\\WishUiServiceProvider"
+            ],
+            "aliases": {
+                "WishUi": "Wishborn\\WishUi\\Facades\\WishUi"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
